@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+.name{
+  position: relative;
+  top: -390px;
+  color: gray;
+}
+.course{
+  position: relative;
+  top: -346px;
+  color: gray;
+}
+
