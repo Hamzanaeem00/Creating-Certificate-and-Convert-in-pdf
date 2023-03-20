@@ -10,6 +10,7 @@ const Dowloadpdf = ({id}) => {
             html2canvas(input)
             .then((canvas) => {
                 const imgData = canvas.toDataURL('image/png');
+                console.log(imgData);
                 const pdf = new jsPDF();
                 pdf.addImage(imgData, 'PNG', 0, 0);
                 pdf.save(`${id}.pdf`);

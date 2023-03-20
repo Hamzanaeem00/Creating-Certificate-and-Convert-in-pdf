@@ -47,3 +47,16 @@
   color: gray;
 }
 
+.student-name{
+  position: relative;
+    top: -392px;
+    color: #282c34;
+    font-size: 20px;
+}
+.course-name{
+  position: relative;
+    top: -353px;
+    color: #282c34;
+    font-size: 20px;
+}
+

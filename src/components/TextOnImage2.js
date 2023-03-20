@@ -1,70 +1,33 @@
-import React, { useState } from 'react'
-
-const TextOnImage2 = () => {
-const[name, setName]=useState('')
-const[course, setCourse]=useState('')
-const[inputData, setInputData]=useState([])
-const[inputData2, setInputData2]=useState([])
+import Dowloadpdf from './Dowloadpdf'
 
 
 
-const addData = (e)=>{
-e.preventDefault()
-// console.log(e);
-let Data =[]
-Data.push({
-    userinput1: name,
-    userinput2: course
-})
-console.log(Data);
-setInputData([...inputData , name])
-
-let Data2 =[]
-Data2.push({
-    userinput2: course
-})
-console.log(Data2);
-setInputData2([...inputData2 , course])
-}
-
+const TextOnImage2 = ({id, data }) => {
+    console.log(id , data );
 
   return (
-    <div >
+    <>
+    <div id={id} >
         <div>
-        <label >
-            Enter Name
-        </label>
-        <input type="text" placeholder='Enter Name' onChange={(e)=>setName(e.target.value)} value={name}/>
-        </div>
-
-        <div>
-        <label>
-            Enter Course
-        </label>
-        <input onChange={(e)=>setCourse(e.target.value)} value={course} type="text" placeholder='Enter Course' />
-          <div>
-            <button onClick={addData}>Add</button>
-          </div>
+    <img src='/logo.png' alt={`${data.name}.certificate`}/>
     </div>
+    {data?.map((item)=>{
+        console.log(item);
+           return(
+            <div  key={item}>
+                <div className='student-name'>
+             {item.name}
+                </div>
+                <div className='course-name'>
+                    {item.course}
+                </div>
 
-    {
-        inputData.map((item)=>{
-            
-            return(
-                <div key={item.id}>{item}</div>
-            )
-        })
-    }
-    {
-        inputData2.map((item)=>{
-            
-            return(
-                <div key={item.id}>{item}</div>
-            )
-        })
-    }
-
+            </div>
+           )
+    })}
     </div>
+    <Dowloadpdf id = {id}/>
+    </>
   )
 }
 
