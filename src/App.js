@@ -6,7 +6,7 @@ import StudentCourseName from './components/StudentCourseName';
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       {/* <TextOnImage id={'Pdfpage'} /> */}
       {/* <TextOnImage2 id={'Pdfpage'}/> */}
       {/* <Dowloadpdf id={'Pdfpage'}/> */}
