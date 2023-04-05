@@ -4,7 +4,7 @@ import jsPDF from 'jspdf';
 const Dowloadpdf = ({id}) => {
   return (
     <div>
-        <button onClick={()=>{
+        <button className='sub-btn' onClick={()=>{
             const input = document.getElementById(id)
             console.log("input>>>",input);
             html2canvas(input)

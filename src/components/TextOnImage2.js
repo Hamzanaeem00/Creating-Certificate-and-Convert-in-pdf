@@ -21,11 +21,11 @@ const TextOnImage2 = ({id, data }) => {
 
   return (
     <>
-            <input type="file" onChange={handleChange} />
+            <input type="file" className='border rounded form-control my-5' onChange={handleChange} />
     <div id={id} >
         <div>
     {/* <img src='/logo.png' alt={`${data.name}.certificate`}/> */}
-           <img src={file} alt='certificate'  width='800px' height='600px' />
+           <img src={file} alt='' className='img-fluid' width="1000px" height="auto" />
     </div>
     {data?.map((item)=>{
         console.log(item);
