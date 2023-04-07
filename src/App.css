@@ -13,32 +13,8 @@
     font-family: system-ui;
     letter-spacing: 1px;
   }
-  .image-input.image-input-outline .image-input-wrapper {
-    border: 3px solid #fff;
-    box-shadow: 0 0.5rem 1.5rem 0.5rem rgb(0 0 0 / 8%);
-  }
-  .image-input .image-input-wrapper {
-    width: 120px;
-    height: 120px;
-    border-radius: 0.475rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .display-image{
-    right: -16px;
-    top: -22px;
-    border-radius: 20px;
-    font-size: 22px !important;
-    background-color: white;
-    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
-    color: gray;
-  }
-  .position-of-image{
-    /* position: absolute; */
-    position: relative;
-      left: 100px;
-      top: -168px;
-  }
+
+  
   ::placeholder {
     font-size: 12px;
     letter-spacing: 1px;
@@ -66,4 +42,7 @@
   
    .sub-btn:hover {
     background-color: #0e67f5;
+  }
+  .was-validated .form{
+    background-image:none ;
   }
