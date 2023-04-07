@@ -36,7 +36,7 @@ const TextOnImage2 = ({id, data }) => {
 
   return (
     <>
-    <div className='d-flex'>
+    <div className='d-flex justify-content-around'>
 
     <div>
       <label className='required' htmlFor="">Select Font Family</label>
